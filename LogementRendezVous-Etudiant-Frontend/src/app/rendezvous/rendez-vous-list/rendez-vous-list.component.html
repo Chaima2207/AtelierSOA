@@ -1,0 +1,7 @@
+<h2>Liste des Rendez-vous</h2>
+<ul>
+  <li *ngFor="let rv of rendezvousList">
+     {{ rv.date }} à {{ rv.heure }} - Logement ref: {{ rv.logement.reference }}
+    <button (click)="delete(rv.id)">Supprimer</button>
+  </li>
+</ul>
